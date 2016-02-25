@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#efefef"
+    android:orientation="horizontal">
+
+    <!-- LinerLayout有比较奇怪的性质：当布局中的控件可以超出布局规定的大小 ,所以这里一行的行宽改成由内部的几个控件
+    控制，而LinerLayout的layout_height改成wrap_content ..  -->
+
+    <com.huang.view.CustomImageView
+        android:id="@+id/ct_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/ct_name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@id/ct_photo"
+        android:layout_toRightOf="@id/ct_photo"
+        android:maxLength="7"
+        android:padding="5dip"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="为你我受冷风吹"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/into_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/in_session" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ct_photo"
+        android:textColor="#000000">
+
+    </TextView>
+
+
+    <!-- 注意不是layout_padding -->
+
+
+</RelativeLayout>

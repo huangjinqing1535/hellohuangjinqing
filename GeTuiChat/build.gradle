@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.huang.getui"
+        minSdkVersion 17
+        targetSdkVersion 17
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/GetuiSDK2.6.4.0.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/okhttp-2.5.0.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/gexin-rp-sdk-base-4.0.0.2.jar')
+    compile files('libs/gexin-rp-sdk-http-4.0.0.2.jar')
+    compile files('libs/gexin-rp-sdk-template-4.0.0.2.jar')
+    compile files('libs/protobuf-java-2.5.0.jar')
+    compile files('libs/jackson-all-1.8.5.jar')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile files('libs/commons-codec-1.2.jar')
+    compile files('libs/BASE64.jar')
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.huang.view.CustomImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon"/>
+
+        <TextView
+            android:id="@+id/msg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@+id/image"
+            android:padding="5dp"
+            android:text="hello"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text=""
+            android:padding="3dp"
+            android:ellipsize="end"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:layout_below="@+id/msg_name"
+            android:layout_toRightOf="@+id/image"
+            android:paddingLeft="5dp"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/msg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="hello"
+            android:padding="3dp"
+            android:gravity="center"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <com.huang.view.CustomImageView
+        android:id="@+id/image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/image1" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/image"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxEms="15"/>
+
+        <TextView
+            android:id="@+id/say_text"
+            android:layout_width="wrap_content"
+            android:maxWidth="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:padding="5dp"
+
+            android:text="fasdfasdfasdfasdfsdafasdfasdfasdfsdafasdfsdfafasd"
+
+            android:background="#E8E8E8"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
